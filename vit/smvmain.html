@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://fiddle.jshell.net/gvee/ygkWH/6/show/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo by gvee</title>
+ 
+
+</head>
+<body>
+ 
+  <script type="text/javascript" src="jquery-1.9.1.js"></script>
+  
+  
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  
+  
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+// Array of images to swap between
+var images = [];
+
+// Add 200 items to array
+
+for (i = 1; i < 252; i++) {
+	
+    images.push('images/smvmain/101 (' +(i) + ').jpg');
+	
+	
+	
+}
+
+
+var totalImages = images.length;
+
+var pageHeight = $(document).height() - $(window).height();
+
+// Work out how often we should change image (i.e. how far we scroll between changes)
+var scrollInterval = Math.floor(pageHeight / totalImages);
+
+$(document).scroll(function () {
+    // Which one should we show at this scroll point?
+    i = Math.floor($(this).scrollTop() / scrollInterval);
+    // Show the corresponding image from the array
+    $('img').attr('src', images[i]);
+    $('b').text('Frame: ' + i);
+	if(i==1||i==2||i==3||i==4||i==5)
+	{
+		var r=document.getElementById('text');
+		var div=document.getElementById('description');
+		r.style.visibility='visible';
+		div.style.visibility='visible';
+		
+	}
+	else{var r=document.getElementById('text');
+		var div=document.getElementById('description');
+		r.style.visibility='collapse';
+		div.style.visibility='collapse'}
+	if(i==252)
+	{
+		
+	var directionbuttn1=document.getElementById('directionbutn1');
+	var directionbuttn2=document.getElementById('directionbutn2');
+	var resetbuttn=document.getElementById('resetbutn');
+	directionbuttn1.style.visibility='visible';
+	directionbuttn2.style.visibility='visible';
+	resetbuttn.style.visibility='visible';
+	
+		
+		
+		
+		
+	}
+	else
+	{
+			var directionbuttn1=document.getElementById('directionbutn1');
+	var directionbuttn2=document.getElementById('directionbutn2');
+	var resetbuttn=document.getElementById('resetbutn');
+		directionbuttn1.style.visibility='collapse';
+	directionbuttn2.style.visibility='collapse';
+	resetbuttn.style.visibility='collapse';
+	}
+});
+
+});//]]>  
+
+</script>
+
+<!--container -->
+
+<div class="container">
+<div id="frame">
+  <img src="images/smvmain/101 (1).jpg" id="image"><b>Frame: 0</b>
+  
+  <!--extra desription -->
+  
+ <div id="description">  
+ <p id="text"><p style="font-weight:bold; font-size:24px;">&nbsp;&nbsp;&nbsp;&nbsp;Sir M.VISVESVARAYA&nbsp;&nbsp;&nbsp;</p>
+ 
+ <p>
+He implemented an extremely intricate system of irrigation in the Deccan area.Visvesvaraya achieved celebrity status when he designed a flood protection system for the city of Hyderabad. He was instrumental in developing a system to protect Visakhapatnam port from sea erosion
+ </p>
+ 
+ </p>
+ </div>
+ 
+ <!--home page button -->
+<div id="button1"><a href="" class="button grow" ><button id="buttona"><p style="font-size:18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtulo des' VIT&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></a></div>
+  </div>
+  
+  <!--Direction buttons -->
+  <!-----button1------->
+  <div style='visibility:collapse' id="directionbutn1"> <div style='top:250px;left:20%;	position:fixed;background-color:#000;	color:#FFF;	opacity:0.6;'><a href=''><button style='font-weight:bold;background-color:#000;color:#FFF;'><p style='font-size:18px;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<< Move left&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></a></div>
+  
+  
+  <!-----button2------->
+  <div style='visibility:collapse' id="directionbutn2"> <div style='top:250px;left:55%;	position:fixed;background-color:#000;	color:#FFF;	opacity:0.6;'><a href=''><button style='font-weight:bold;background-color:#000;color:#FFF;'><p style='font-size:18px;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move Right >>&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></a></div>
+  
+  
+  <!-----Reset button------->
+  <div style='visibility:collapse' id="resetbutn"> <div style='top:70px;left:63%;	position:fixed;background-color:#000;	color:#FFF;	opacity:0.6;'><a href=''><button style='font-weight:bold;background-color:#000;color:#FFF;'><p style='font-size:13px;'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reset&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></a></div>
+  
+  
+  
+</div>
+
+
+
+
+</body></html>
+<style>
+  img, b {
+    position: fixed;
+  margin-top: 3%; margin-left:15%;
+	height:80%;
+	width:60%;
+	
+	
+	
+}
+body {
+    height: 10000px;
+	
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+#buttona{
+font-weight:bold;
+background-color:#000;
+color:#FFF
+
+}
+#button1{
+	top:480px;
+	left:55%;
+	
+	
+	position:fixed;
+	background-color:#000;
+	color:#FFF;
+	opacity:0.6;
+	
+}
+#description{
+	top:200px;
+	left:700px;
+	position:fixed;
+	color:#fff;
+	background-color:#000;
+	opacity:0.6;
+	border:solid;
+	visibility:collapse;
+	width:300px;
+}
+#description #text{
+	visibility:collapse;
+	
+}
+
+</style>

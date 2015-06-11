@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/pic/makers-fete-icon.ico" type="image/x-icon" />
+    <title>Makers Fete</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+    
+    <!--------------countdown------------------------------>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Pragmatic Mates s.r.o. - http://pragmaticmates.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="countdowncss/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="countdowncss/demo.css">
+  
+   
+  <!--------------slider------------------------------>
+  
+  
+        <link rel="stylesheet" type="text/css" href="slidercss2/demo.css" />
+        <link rel="stylesheet" type="text/css" href="slidercss2/style2.css" />
+		<script type="text/javascript" src="sliderjs/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="slidercss2/nojs.css" />
+		</noscript>
+    
+   
+   
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="plugin/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="plugin/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="plugin/css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="plugin/css/component.css" />
+	<link rel="stylesheet" href="font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font/css/stylo.css" type="text/css" charset="utf-8">
+	
+
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    
+    
+    
+    
+  <!-- Hover CSS----->
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  
+  
+ 
+        <script type="text/javascript" src="js/news.js"></script>
+</head>
+	
+<body onLoad="change();hange();newc();change3();new2();">
+	
+<!-- NAVBAR
+================================================== -->
+<!---1st navbar------------>
+                 <nav class="navbar navbar-default" role="navigation" style="background-color:white">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#fepsi-navbar-collapse">
+                                 <span class="sr-only">Toggle navigation</span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                                 <span class="icon-bar"></span>
+                        </button>
+      
+	                        <div class="navbar-brand" href="#" style="margin: 5px 5px 5px 30px" >
+                            <div class="xbrand">Makers Fete&#39;14</div>
+                            </div>
+                    
+					</div>
+									 
+									 
+                    <div class="collapse navbar-collapse" id="fepsi-navbar-collapse">
+                    <div id="logo">
+                    <a href="expo.php" class="button grow"><img src="pic/logo.png" id="img"></a>
+                    </div>
+                    
+                            <ul class="nav navbar-nav pull-right" style="padding:10px">
+                                 <li ><a href="home.html" >Home</a></li>
+		                      
+							    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Maker Contests<b class="caret"></b></a>
+                                       
+                                        <ul class="dropdown-menu" >
+                                          <li><a href="iamamaker.php">I am a Maker</a></li>
+                                          <li ><a href="myidea.php">My Idea</a></li>
+                                          <li><a href="artfair.php">Art Fair</a></li>
+                                          
+               
+                                        </ul>
+                                </li>
+		                        <li><a href="workshop.php" >Maker Workshops</a></li>
+		                        <li><a href="expo.php" >Makers Expo</a></li>
+		                        
+		                        <li><a href="uncommonindian.html" id="change3">The Uncommon Indian<sup id="new2"><b>new</b></sup></a></li>
+		                        <li><a href="partner.html" >Partner</a></li>
+		                        <li><a href="experienceit.php" >Experience it</a></li>
+		                        <li><a href="contact.html" >Contact</a></li>
+		 
+         
+                            </ul>
+                    </div>
+                </nav>
+<!-----2nd navbar---->
+                <nav id="navbar-example" class="navbar2 navbar-default" role="navigation" style="background-color:#3498db;" >
+                        <div class="navbar-header" >
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fepsi1-navbar-collapse">
+                                      <span class="sr-only">Toggle navigation</span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                    </button>
+     
+
+	                        <div class="navbar-brand" href="#"></div>
+	  
+                        </div>
+   
+                        <div class="collapse navbar-collapse" id="fepsi1-navbar-collapse" > 
+                        
+                          <!--TIMER--------------------------------->
+                        <div class="timer">
+                        
+                        <div class="countdown countdown-continer continer">
+    <div class="clock row">
+        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+            <div class="wrap">
+                <div class="inner">
+                    <div id="canvas-days" class="clock-canvas"></div>
+
+                    <div class="ytext">
+                        <p class="val">0</p>
+                        <p class="type-days type-time">DAYS</p>
+                    </div><!-- /.text -->
+                </div><!-- /.inner -->
+            </div><!-- /.wrap -->
+        </div><!-- /.clock-item -->
+
+        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+            <div class="wrap">
+                <div class="inner">
+                    <div id="canvas-hours" class="clock-canvas"></div>
+
+                    <div class="ytext">
+                        <p class="val">0</p>
+                        <p class="type-hours type-time">HOURS</p>
+                    </div><!-- /.text -->
+                </div><!-- /.inner -->
+            </div><!-- /.wrap -->
+        </div><!-- /.clock-item -->
+
+        <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+            <div class="wrap">
+                <div class="inner">
+                    <div id="canvas-minutes" class="clock-canvas"></div>
+
+                    <div class="ytext">
+                        <p class="val">0</p>
+                        <p class="type-minutes type-time">MINUTES</p>
+                    </div><!-- /.text -->
+                </div><!-- /.inner -->
+            </div><!-- /.wrap -->
+        </div><!-- /.clock-item -->
+
+        <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+            <div class="wrap">
+                <div class="inner">
+                    <div id="canvas-seconds" class="clock-canvas"></div>
+
+                    <div class="ytext">
+                        <p class="val">0</p>
+                        <p class="type-seconds type-time">SECONDS</p>
+                    </div><!-- /.text -->
+                </div><!-- /.inner -->
+            </div><!-- /.wrap -->
+        </div><!-- /.clock-item -->
+    </div><!-- /.clock -->
+</div><!-- /.countdown-wrapper -->
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="countdownjs/kinetic.js"></script>
+<script type="text/javascript" src="countdownjs/jquery.final-countdown.js"></script>
+<script type="text/javascript">
+
+var a=Math.round(new Date().getTime()/1000.0)
+	$('.countdown').final_countdown({
+        'start': 1393612200,
+        'end': 1411705800,
+        'now': a        
+    });
+</script>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+						
+                                <ul class="nav navbar-nav pull-right" style="padding-left:5px; margin-top:12px; font-size:13.7px;">
+                                      <li ><a href="#what" style="color:white">What is Makers Fete?</a>
+                                      </li>
+                                      <li ><a href="#why" style="color:white">Why Maker Fete?</a></li>
+                                      <li ><a href="#vit" style="color:white">About VIT</a></li>
+                                      <li ><a href="#fep" style="color:white">About Fep-Si</a></li>
+		                              <li ><a href="getinvolved.html" style="color:white" id="change">Get Involved<sup id="new"><b>new</b></sup></a></li>
+		                              <li ><a href="campusambassador.html" style="color:white">Campus Ambassador</a></li>
+									    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:white">Team<b class="caret"></b></a>
+                                       
+                                        <ul class="dropdown-menu" >
+                                          <li><a href="patron.html" style="color:white">Patrons</a></li>
+                                          <li ><a href="team.html" style="color:white">Team</a></li>                            
+                                        </ul>
+                                       </li>
+		                              <li ><a href="contact.html" style="color:white">How to Reach</a></li>
+                                </ul>
+								
+                        </div>
+                </nav>
+<!-- NAVBAR ends
+================================================== -->
+
+
+<!-- Banner
+================================================== -->
+
+<div class="row banner"><!----satrt pic--->
+<div id="box">
+
+	<h3 id="rowbanner" class="makers-title">Makers Fete &#39;14</h3>
+	<h3 id="rowbanner"class="tag-line">&#34;The World Is What You Make It!&#34;</h3>
+	<h4 id="rowbanner"class="date">26th - 28th September &#39;14</h4>
+   
+ </div>   
+    
+    <div class="container"  id="image">
+			
+             <br>
+       
+            <a href="workshop.php" id="hange"><b>!--Makers Fete presents MAKER WORKSHOPS for one stop learning arena.'--!</b></a> \  
+			<div id="da-slider" class="da-slider">
+           
+				<div class="da-slide">
+					<h2>Makers Fete&#39;14</h2>
+					<p>"The&nbsp; World&nbsp;   Is&nbsp;   What&nbsp;   You &nbsp;  Make &nbsp;It!"</p>
+                    
+                   <h2 id="date">26<sup>th</sup> - 28<sup>th</sup> September &#39;14</h2>
+					
+					
+				</div>
+				<div class="da-slide">
+                <p>
+					<h2>IF YOU CAN <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YOU CAN</h2>					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dream it then<br><br><br><br> </p>
+                    
+                    <p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do it.</p>
+					
+					
+				</div>
+				<div class="da-slide">
+					<h2>BE A PART OF US</h2>
+					<p>Visit the <a href="getinvolved.html" style="color:#30C"">get involved</a> 
+					 page shown above<br>and join the revolution.   </p>
+					
+					
+				</div>
+				<!--<div class="da-slide">
+					<h2>Quality Control</h2>
+					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					
+					
+				</div> -->
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="sliderjs/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+
+
+
+<!-- Content section
+================================================== -->
+ <div style="background-color:#2980b9"><!---general background divison--->
+               <!----content1--->
+			<section class=" ss-style-bigtriangle" style="background-color:#3498db">
+				
+				<div class="row">
+				
+				            <div class="col-md-4">
+					             <a href="expo.php" class="button grow"><img src="pic/wheel.jpg" class="img-circle" width="200px" height="200px"></a>
+                                 <a href="expo.php" style="color:white"><h3><strong><font face="Century Gothic" >Makers Expo</strong></h3></font></a>
+				                 <p style="color:white"><font face="Century Gothic" >Ultimate Arena for all the Makers to display their creation to the World</font></p>
+				            </div>
+				
+				            <div class="col-md-4">
+				                 <a href="iamamaker.php" class="button grow"><img src="pic/i am a maker_home.jpg" class="img-circle" width="200px" height="200px"></a>
+					             <a href="iamamaker.php" style="color:white"><h3><strong><font face="Century Gothic" >I am a MAKER</strong></h3></font></a>
+					             <p style="color:white"><font face="Century Gothic" >Compete with the best of opponents across India</font></p>
+				            </div>
+				
+				            <div class="col-md-4">
+					             <a href="myidea.php" class="button grow"><img src="pic/a1.jpg" class="img-circle" width="200px" height="200px"></a>
+					             <a href="myidea.php" style="color:white"><h3><strong><font face="Century Gothic" >My Idea</strong></h3></font></a>
+					             <p style="color:white"><font face="Century Gothic">Got an idea that can transform the World?</font></p>
+				            </div>
+				
+				</div>
+               
+				
+				<div class="row">
+				
+				            <div class="col-md-4 col-md-offset-2">
+				                 <a href="workshop.php" class="button grow"><img src="pic/a2.jpg" class="img-circle" width="200px" height="200px"></a>
+				                 <a href="workshop.php" style="color:white"> <h3><strong><font face="Century Gothic" >Maker Workshops</strong></h3></font></a>
+					             <p style="color:white"><font face="Century Gothic">Check out our revolutionary Maker Workshops, free for everyone to attend</font></p>
+                            </div>
+				
+                
+                <div class="col-md-4">
+				                     <a href="artfair.php" class="button grow"><img src="pic/artfair_home.jpg" class="img-circle" width="200px" height="200px"></a>
+				                     <a href="artfair.php" style="color:white"><h3><strong><font face="Century Gothic" >Art Fair</a></strong></h3></font>
+                                     <p style="color:white"><font face="Century Gothic">Celebration of art and colours</font></p>
+                                       
+				            </div>
+				            
+				
+				            
+				</div>
+                
+                <div class="row">
+				            
+							<div class="col-md-4 col-md-offset-2">
+					                 <a href="uncommonindian.html" class="button grow"><img src="pic/uncommonindian_home.jpg" class="img-circle" width="200px" height="200px" ></a>
+                                     <a href="uncommonindian.html" style="color:white"><h3><strong><font face="Century Gothic" >The Uncommon Indian</strong></h3></font></a>
+                                     <p style="color:white"><font face="Century Gothic">Meet the Real Makers of our country</font></p>
+				            </div>
+							
+				            
+							
+				            <div class="col-md-4">
+					                 <a href="experienceit.php" class="button grow"><img src="pic/experienceit_homepage.jpg" class="img-circle" width="200px" height="200px"></a>
+					                 <a href="experienceit.php" style="color:white"><h3><strong><font face="Century Gothic" >Experience It</a></strong></h3></font>
+				                     <p style="color:white"><font face="Century Gothic">Experience the whole new World of Making</font></p>
+                            </div>
+				    </div>
+			</section>
+			
+			<svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z" />
+			</svg>
+			
+			<!---content2--->
+			<section>
+			        <div class="row" data-spy="scroll" data-target="#navbar-example">
+				        <div class="col-md-12">
+					                           <h2 id="what" style="color:white"><font face="Century Gothic">Makers Fete '14</font></h2><br><br>
+											   
+					                           <p  style="color:white"><font face="Century Gothic"> Fep-Si's Makers Fete is a platform for all the change makers of the country 
+					                           to showcase and display change making ideas, creativity, inventions, resourcefulness 
+					                           and start-ups that in any way would help in making the world a better place to live in. 
+                                               Makers Fete is a gathering of tech enthusiasts, crafters, tinkerers, hobbyists, engineers, science clubs, 
+                                               students, and commercial exhibitors. All of these “Makers” come together to showcase their ideas and to share what 
+                                               they have learned. It aims to keep things simple; very simple. Anyone with an idea that can bring any minute change in the 
+                                               society, the way of life, comforts, making the world a better place to live in, is welcome to be a part of the innovative and 
+                                               yet prestigious 'Maker Family'. It emphasizes to bring together a community of makers and give them a platform to showcase and 
+                                               exhibit their ideas, products and creations.
+											   </font></p><br><br>
+					 
+					                           <h2 id="why"><font face="Century Gothic">Why Makers Fete?</font></h2><br>
+											   
+					                           <p style="color:white;margin-top:20px"><font face="Century Gothic">The world is full of change makers and curiosity that drives them, 
+					                           so fueling their drive we gather all creators, makers, tinkerers and hobbyists to celebrate the festival of making because 'the world is what we make of it'.
+                                               Different 
+                                               s of Makers fete like Maker Workshops, Maker Talks, Manifestations, The Uncommon Indian etc, provide all makers a big hub to gather, share the knowledge , 
+                                               grow individually and in turn lead to the growth of the nation. We, the team of Makers Fete, hope all the participants to do the same by sharing what they learn here, thereby helping in potential growth of our nation.
+                                               Planning to revive the old attitude "Sharing for Development", we at Makers Fete celebrate innovations and ideas.  
+                                               </font></p>
+
+				        </div>
+				    </div>
+            </section>
+			
+			<!-----content 3---->
+			<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 100 C 20 0 50 0 100 100 Z"/>
+			</svg>
+			
+			<section class="color ss-style-curvedown" style="margin-top:-5px;background-color:2980b9">
+			         
+				<div class="row" data-spy="scroll" data-target="#navbar-example">
+				                
+								<div class="col-md-4"  >
+					                <img src="pic/tt3.jpg" height="200px" width="200px" class=" img-circle" style="margin-top:130px" ></p>
+                                </div>
+								
+								
+				                <div class="col-md-8" >
+					                  <h2 id="vit"><font face="Century Gothic">About VIT University</font></h2><br><br>
+									  
+					                  <p style="color:white"><font face="Century Gothic">We are happy to introduce VIT University to you; a cosmopolitan university enriched with diverse 
+					                  cultures with an in-house strength of over 25,000 students representing every state of India and 52 countries around the globe.<br><br>  
+                                      The campus accounts for an infrastructure of international standards. The campus is spread across an area of 400 acres with state of art 
+                                      infrastructure facilities including a mega outdoor stadium, many auditoriums, conference halls, smart class rooms, galleries, outdoor grounds, 
+                                      outdoor meeting and gathering venues, state- of-the-art laboratories, digital library, twenty three hostels, gyms, swimming pools
+                                      , auditoria etc. on way to fulfill the vision of the founder and Chancellor Dr. G. Viswanathan to make it truly world class. <br><br>  
+                                      On a whole, it offers an unparalleled venue for a never before known Maker Experience. More information about the University can be found 
+                                      <a href="http://www.vit.ac.in/ " style="color:lightgreen">here.</a> </font>
+                                      </p>
+				                </div>
+				</div>
+            </section>
+			
+			<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 0 C 50 100 80 100 100 0 Z"/>
+			</svg>
+			
+			<!-----content 4----->
+			
+			<section class="color ss-style-boxes" style="background-color:#2980b9">
+			             <div class="row" data-spy="scroll" data-target="#navbar-example">
+				                 
+								 <div class="col-md-8">
+					                 <h2  id="fep" style="color:white"><font face="Century Gothic">About Fep-Si</font></h2><br><br>
+									 
+					                 <p  style="color:white"><font face="Century Gothic">Forum for Empowering People through Social Innovation & entertainment (Fep-Si) is 
+					                 a national level NGO which works on different social issues by forming various student groups 
+					                 and implementing activities that benefit the society. In addition to this, it aims to build 
+					                 up a potential platform, where it offers the scope for an ‘individual’ to develop and to 
+					                 render his contribution for a better tomorrow. <br><br>
+                                     Fep-Si is the birth child of likeminded Young Change Makers from VIT University with zeal and passion to 
+                                     do something for a better India. Instead of conventional approaches to tackle social issues, Fep-Si follows innovative way 
+                                     of fighting social evils and poverty through creativity, innovation and entertainment. <br><br>
+                                     More details on Fep-Si’s projects, activities and achievements can be found <a href="http://www.fepsi.in/" target="_blank" style="color:lightgreen">here.</a></font>
+                                     </p>
+					
+				                </div>
+				
+				                <div class="col-md-4">
+					                    <img src="pic/abt.jpg" height="200px" width="200px" class=" img-circle" style="margin-top:110px"></p>
+                                </div>
+				
+				        </div>
+			</section>
+			
+			<!-----content 5------>
+			
+			<section style="background-color:#3498db">
+				     
+					 
+			</section>
+            <br>
+            
+ <section id="boxxx">
+ <div id="sponsor">
+ Event partner<br>
+ <img src="pic/tifac.png">
+ </div>
+ <div id="sponsor">
+ Media Partner<br>
+ <img src="pic/the college fever logo.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="pic/Twenty19 logo (Trans).png">
+ </div>
+ 
+ </section>
+			
+			<!-----content 5 ends--->
+			
+ </div><!---general background divison ends--->
+ 
+
+ <!-- Footer
+    ================================================== -->
+	<!----1st footer--->   
+
+<div class="jumbotron" style="background:black;">
+			
+			
+			  <div class="row" style="padding-left:15px;padding-right:15px;">
+							 
+									 
+							  <div class="col-sm-3 col-xs-4">
+								  <img src="pic/unnamed.png" class="img-responsive">
+							  </div>
+							  <div class="col-sm-2 col-xs-4">
+									 <h5 style="color:white;font-size:18px" >Follow us</h5>
+									 <a href="https://www.facebook.com/fepsi.india" target="_blank"><i class="fa fa-facebook-square fa-2x" style="color:white"></i></a><font color="white" > Fep Si<br>
+									  <a href="https://www.facebook.com/makersfete14" target="_blank"><i class="fa fa-facebook-square fa-2x" style="color:white"></i></a> Makers Fete</font>
+									  <br><br>
+							 <p><i class="fa fa-envelope" style="color: white !important;"></i> <strong style="color: white">Email:</strong> <a href="mailto:info@makersfete.com">info@makersfete.com</a></p>
+							  </div>
+							 
+ <div class="col-sm-2 col-xs-4" style="color:white">
+									 <h5 style="color:white;font-size:18px">Contact Us</h5>
+									 <p><i class="fa fa-map-marker"></i> <strong>Address:</strong> VIT University,<br>Vellore,Tamil Nadu.</p>
+									 <p><i class="fa fa-phone"></i><strong>Phone: English +91 9159888479<br>Hindi +91 9159865936<br>Tamil and Telugu +91 9524244422
+</strong>
+									 
+							  
+							  </div>
+							  <div class="col-sm-3 col-xs-6">
+								  
+							  <img src="partner/vit.png" class="img-responsive">
+							  </div>
+
+							  <div class="col-sm-2 col-xs-6">  
+							  <img src="pic/swenew.png" class="img-responsive" align="right">
+							  							</br></br>   &nbsp;<h5 style="color:white" align="right"><b>Design Partner</b></h5>
+							  <p style="font-size:13px" align="right"><a href="https://www.facebook.com/rajsoni1994" style="color:white">Designed By Raj Soni</a></p>
+							  <p style="font-size:13px" align="right"><a href="https://www.facebook.com/sarthak8" style="color:white">Sarthak saxena</a></p>
+                              <p style="font-size:13px" align="right"><a href="https://www.facebook.com/arushi.kunchal" style="color:white">Arushi kunchal</a></p>
+							  </div>
+				</div>
+
+
+</div>
+
+
+ 
+ <!-- Javascript and Jquery file 
+================================================== -->
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+    
+</body>
+
+</html>
+<script>
+    // set the date we're counting down to
+var target_date = new Date("Sep 26, 2014").getTime();
+ 
+// variables for time units
+var days, hours, minutes, seconds;
+ 
+// get tag element
+var countdown = document.getElementById("countdown");
+ 
+// update the tag with id "countdown" every 1 second
+setInterval(function () {
+ 
+    // find the amount of "seconds" between now and target
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    // do some time calculations
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+    // format countdown string + set tag value
+    countdown.innerHTML = "<div id='days'>"+days + "'D&nbsp;&nbsp; " + "</div>"+"<div id='hours'>"+hours + "h &nbsp; "+ "</div>"
+    +"<div id='minutes'>"+ minutes + "m &nbsp; " + "</div>"+"<div id='seconds'>"+ seconds + "s"+ "</div>";  
+ 
+}, 1000);
+
+</script>
+    
+    
+    <!----- sponsor and makers fete logo top left corner  ---------------->
+    <style>
+	
+	#boxxx{
+		margin-top:-10%;
+		background-color:#FFF;
+		margin-bottom:10%;
+		color:#000;
+		font-weight:bold;
+		
+	}
+	
+	
+	
+	
+	@media screen and (min-width: 1250px) { 
+	#logo
+	{
+		
+		
+		float:left;
+	
+	width:280px;
+	height:75px;
+	margin-left:-2%;
+	margin-top:1%;
+	
+	
+	}
+	#logo #img
+	{
+		width:100%;
+		height:99%;
+		visibility:visible;
+	}
+	.xbrand{
+		visibility:hidden;
+		font-size:0px;
+	}
+	
+	}
+	@media screen and (min-width: 10px) and (max-width: 1249px) {
+		
+		
+	#logo
+	{
+		
+		
+	
+	
+	width:0px;
+	height:0px;
+	visibility:hidden;
+	
+	
+	
+	}	
+		
+		#logo #img
+	{
+		width:0px;
+		height:0px;
+		visibility:hidden;
+	}
+	.xbrand{
+		visibility:visible;
+	}
+	}
+	
+	
+	</style>
+    
+    

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Text Opening Sequence with CSS Animations</title>
+		<meta name="description" content="Text Opening Sequence with CSS Animations" />
+		<meta name="keywords" content="text, opening sequence, opening credits, css animations, typography, lettering.js" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
+        
+	</head>
+	<body style="background-image:url(10377149_793241340698207_5718965700430250076_n.jpg)">
+		<div class="container">	
+			<!-- Codrops top bar -->
+			<div class="codrops-top clearfix">
+             <div id="object" class="floating" style="text-align:right";>
+   <a href=""> <img src="images/free-60-icons-47.png" alt=""  width="100px" hspace="50px" /></a>
+   <a href=""> <img src="images/free-60-icons-57.png" alt=""  width="100px" hspace="50px" /></a>
+   <a href=""> <img src="images/free-60-icons-50.png" alt=""  width="100px" hspace="50px" /></a>
+   <br />
+   <br />
+
+   <br />
+
+   <br />
+   </div>
+				<a href="http://tympanus.net/Tutorials/YouTubeLeftSideMenu/"><strong>&laquo; Previous Demo: </strong>YouTube Menu Effect</a>
+				<span class="right"><a href="http://tympanus.net/codrops/?p=14902"><strong>Back to the Codrops Article</strong></a></span>
+			</div>
+			<div class="os-phrases" id="os-phrases">
+				<h2 style="font-size:130px; font-weight:bold">VIT</h2>
+				<h2 style="font-size:130px; font-weight:bold">A PLACE to learn</h2>
+				<h2 style="font-size:130px; font-weight:bold">a chance to grow</h2>
+                
+              
+                
+				
+			</div>
+           
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+			})
+		</script>
+	</body>
+</html>
